@@ -1,0 +1,26 @@
+class Engine{
+    
+    
+    public int speed(){
+        return 30;
+    }
+}
+
+class McLarenEngine extends Engine{
+    public int speed(){
+        return 5;
+    }
+}
+class FerrariEngine extends Engine{
+    public int speed(){
+        return 15;
+    }
+}
+
+public class MyClass {
+    public static void main(String args[]) {
+     //obeying LSP as we are able to replace Parent object with child.
+        Engine e=new FerrariEngine();
+        System.out.println("speed is "+e.speed());
+    }
+}
