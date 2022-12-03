@@ -74,7 +74,8 @@ public interface Payment {
 public interface Bank extends Payment {
     void initiatePayments();
 }
-Copy
+
+
 public interface Loan extends Payment {
     void intiateLoanSettlement();
     void initiateRePayment();
